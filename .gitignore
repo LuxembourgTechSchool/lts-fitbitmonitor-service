@@ -1,0 +1,8 @@
+venv3/
+*.pyc
+
+instance/
+model/
+logs/
+
+.vscode/
