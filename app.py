@@ -42,8 +42,8 @@ insurance_grade_model = joblib.load(APPLICATION_MODEL).set_params(n_jobs=1)
 def create_app():
 
     app = Flask(__name__, instance_relative_config=True)
-    app.config.from_object('config')
-    app.config.from_pyfile('config.py')
+    app.config.from_object('config.ProductionConfig') # Config from root config: ./config.py
+    app.config.from_pyfile('custom.py') # Config in ./instance/config.py
 
     from api import serverhealth
     app.register_blueprint(serverhealth.bp)
