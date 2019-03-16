@@ -37,4 +37,5 @@ Install dependencies:
 
 ## Option B: Using Waitress
 
-    waitress-serve app:create_app
+    waitress-serve --call 'app:create_app'
+
