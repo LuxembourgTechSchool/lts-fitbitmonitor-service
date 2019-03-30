@@ -51,6 +51,9 @@ def create_app():
     from api import insurance
     app.register_blueprint(insurance.bp)
 
+    from api import gotyourback
+    app.register_blueprint(gotyourback.bp)
+
     app.logger.info('App has been created.')
     app.logger.info(' APPLICATION_LOG   : {}'.format(APPLICATION_LOG))
     app.logger.info(' APPLICATION_MODEL : {}'.format(APPLICATION_MODEL))

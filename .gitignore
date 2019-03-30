@@ -3,6 +3,7 @@ venv3/
 
 instance/
 model/
+data/
 logs/
 
 .vscode/
